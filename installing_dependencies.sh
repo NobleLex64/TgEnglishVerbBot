@@ -31,7 +31,7 @@ read -r CHANNEL
 env_file="code/.env"
 if [ ! -f "$env_file" ]; then
     cat > "$env_file" <<EOL
-BOT_TOKEN=7586168444:$BOT_TOKEN
+BOT_TOKEN=$BOT_TOKEN
 
 CHANNEL_USERNAMES=$CHANNEL
 ADMIN_ID=1
