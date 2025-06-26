@@ -1,0 +1,9 @@
+data/image/**
+data/database/**
+data/test/**
+data/backgroundimage/** 
+**/*.env
+*.env
+logs/**
+__*
+**/__*
