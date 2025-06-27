@@ -236,7 +236,7 @@ async def check_progress(update: Update, context: ContextTypes.DEFAULT_TYPE):
     ]  
 
     for name, cd in result.items():
-      text = f"'{name}':\n    Выученно глаголов: '{cd['count']}'\n    Дата последнего входа: '{cd['data']}'\n\n"
+      text += f"'{name}':\n    Выученно глаголов: '{cd['count']}'\n    Дата последнего входа: '{cd['data']}'\n\n"
 
     message = await update.callback_query.message.reply_text(text, reply_markup=InlineKeyboardMarkup(keyboard))
     await add_message_id(user_id, message.id)
